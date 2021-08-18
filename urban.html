@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <meta http-equiv= "content-type" content="text/html" charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>YEAR VS URBAN</title>
+   <link rel="stylesheet" href="urban.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Population(in billion)', 'Urban(in billion)'],
+          [ 1951,    2.58,    0.775],
+          [ 1952,    2.63,    0.799],
+          [ 1953,    2.67,    0.824],
+          [ 1954,    2.72,    0.85],
+          [ 1955,    2.77,    0.877],
+          [ 1956,    2.82,    0.905],
+          [ 1957,    2.87,    0.933],
+          [ 1958,    2.92,    0.963],
+          [ 1959,    2.97,    0.993],
+          [ 1960,    3.03,    1.02],
+          [ 1961,    3.09,    1.06],
+          [ 1962,    3.15,    1.09],
+          [ 1963,    3.21,    1.12],
+          [ 1964,    3.27,    1.16],
+          [ 1965,    3.33,    1.19],
+          [ 1966,    3.40,    1.22],
+          [ 1967,    3.47,    1.25],
+          [ 1968,    3.55,    1.29],
+          [ 1969,    3.62,    1.32],
+          [ 1970,    3.70,    1.35],
+          [ 1971,    3.77,    1.39],
+          [ 1972,    3.85,    1.42],
+          [ 1973,    3.92,    1.46],
+          [ 1974,    4.00,    1.5],
+          [ 1975,    4.07,    1.54],
+          [ 1976,    4.15,    1.58],
+          [ 1977,    4.22,    1.62],
+          [ 1978,    4.30,    1.66],
+          [ 1979,    4.38,    1.71],
+          [ 1980,    4.45,    1.75],
+          [ 1981,    4.53,    1.8],
+          [ 1982,    4.61,    1.85],
+          [ 1983,    4.69,    1.9],
+          [ 1984,    4.78,    1.96],
+          [ 1985,    4.87,    2.01],
+          [ 1986,    4.96,    2.06],
+          [ 1987,    5.05,    2.12],
+          [ 1988,    5.14,    2.18],
+          [ 1989,    5.23,    2.23],
+          [ 1990,    5.32,    2.29],
+          [ 1991,    5.41,    2.35],
+          [ 1992,    5.49,    2.4],
+          [ 1993,    5.58,    2.46],
+          [ 1994,    5.66,    2.52],
+          [ 1995,    5.74,    2.58],
+          [ 1996,    5.82,    2.63],
+          [ 1997,    5.90,    2.69],
+          [ 1998,    5.98,    2.75],
+          [ 1999,    6.06,    2.81],
+          [ 2000,    6.14,    2.87],
+          [ 2001,    6.22,    2.93],
+          [ 2002,    6.30,    3],
+          [ 2003,    6.38,    3.07],
+          [ 2004,    6.46,    3.14],
+          [ 2005,    6.54,    3.22],
+          [ 2006,    6.62,    3.29],
+          [ 2007,    6.70,    3.36],
+          [ 2008,    6.78,    3.44],
+          [ 2009,    6.87,    3.52],
+          [ 2010,    6.95,    3.59],
+          [ 2011,    7.04,    3.67],
+          [ 2012,    7.12,    3.75],
+          [ 2013,    7.21,    3.82],
+          [ 2014,    7.29,    3.9],
+          [ 2015,    7.37,    3.98],
+          [ 2016,    7.46,    4.06],
+          [ 2017,    7.54,    4.14],
+          [ 2018,    7.63,    4.22],
+          [ 2019,    7.71,    4.3],
+          [ 2020,    7.79,    4.38]
+        ]);
+
+        var options = {
+          title: 'YEAR vs URBAN and TOTAL POPULATION',
+          titleTextStyle: {
+        color: 'black',    
+        fontName: 'Times New Roman',
+        fontSize: 25, 
+        bold: true},
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0},
+          'backgroundColor': '#FFFFE0'
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div"></div>
+    <a href="index.html" target="_parent"><img id="img1" src="cross.png">
+  </body>
+</html>
